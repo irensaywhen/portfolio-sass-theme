@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-sass-theme",
+  "version": "1.0.0",
+  "description": "Responsive portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irensaywhen/portfolio-sass-theme.git"
+  },
+  "author": "Irina Gataullina",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/irensaywhen/portfolio-sass-theme/issues"
+  },
+  "homepage": "https://github.com/irensaywhen/portfolio-sass-theme#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
