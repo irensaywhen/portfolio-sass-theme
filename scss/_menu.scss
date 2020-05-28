@@ -1,4 +1,4 @@
-//Menu Button
+/*---Button styles---*/
 
 .menu-btn {
   position: absolute;
@@ -40,7 +40,8 @@
   }
 }
 
-//Menu Overlay
+/*---Menu overlay---*/
+
 .menu {
   position: fixed;
   top: 0;
@@ -134,45 +135,4 @@
   .nav-item:nth-child(#{$x}) {
     transition-delay: $x * 0.1s;
   }
-}
-
-.about-info {
-  display: grid;
-  grid-gap: 2rem;
-  grid-template-areas:
-    "bioimage bio bio"
-    "job1 job2 job3";
-  grid-template-columns: repeat(3, 1fr);
-
-  .bio-image {
-    grid-area: bioimage;
-    margin: auto;
-    border-radius: 50%;
-    border: 3px solid $secondary-color;
-  }
-
-  .bio {
-    grid-area: bio;
-    font-size: 1.5rem;
-  }
-
-  @for $i from 1 through 3 {
-    .job#{$i} {
-      grid-area: job#{$i};
-    }
-  }
-
-  .job {
-    background: lighten($primary-color, 5);
-    padding: 0.5rem;
-    border-bottom: 5px solid $secondary-color;
-  }
-}
-
-#main-footer {
-  text-align: center;
-  padding: 1rem;
-  background: darken($primary-color, 10);
-  color: set-text-color($primary-color);
-  height: 60px;
 }
